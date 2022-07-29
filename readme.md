@@ -10,4 +10,4 @@ I have added all the projects links on this website
 To be honest, the portfolio website was the toughset one to create because it needed creativity.
 The hardest part was to think about the designs.
 
-![Preview]("./images/Screenshot from 2022-07-29 19-24-20.jpg")
+![Preview Image](./images/Screenshot from 2022-07-29 19-24-20.jpg)
