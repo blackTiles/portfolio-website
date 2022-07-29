@@ -3,7 +3,7 @@
 
 ### Time taken : Around 6 hours
 
-[Click here to see my portfolio]("https://www.satyamraj.netlify.app")
+[Click here to see my portfolio](https://satyamraj.netlify.app/)
 
 
 I have added all the projects links on this website
