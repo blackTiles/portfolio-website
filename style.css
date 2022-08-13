@@ -686,4 +686,9 @@ a{
         border-bottom: 1px solid rgb(0, 0, 0);
         width: fit-content;
     }
+    .footer-left ul li{
+        font-size:14px;
+        font-family: var(--font6);
+    
+    }
 }
