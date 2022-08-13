@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satyam Raj</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -14,11 +13,15 @@
         <nav class="nav-bar">
             <div class="nav-name">SATYAM</div>
             <ul class="list-items">
+                <li class="close-btn" onclick="closeNav()" style="font-size: 35px;">&times;</li>
                 <a href="index.html"><li class="list-item">Home</li></a>
                 <a href="#page-projects"><li class="list-item">Projects</li></a>
                 <a href="#"><li class="list-item">Skills</li></a>
                 <a href="#page-contact"><button class="contact-btn">CONTACT ME</button></a>
             </ul>
+            <div class="hamburger">
+                <span onclick="openNav()" style="font-size: 35px;">&#9776;</span>
+            </div>
         </nav>
         <section class="hero">
             <div class="hero-left">
@@ -39,10 +42,11 @@
                 <h1>PROJECTS</h1>
             </div>
             <div class="project-page-bottom">
-                <div class="project-box" onclick="showHtmlProjects()" id="project-box-html">
+                <a href="html-css.html"><div class="project-box" id="project-box-html">
                     <div class="icon"><i class="fa-brands fa-html5"></i>+<i class="fa-brands fa-css3-alt"></i></div>
                     <div class="project-title">html+css</div>
                 </div>
+            </a>
                 <div class="project-box">
                     <div class="icon"><i class="fa-brands fa-react"></i></div>
                     <div class="project-title">React</div>
@@ -57,86 +61,7 @@
                 </div>
             </div>
             
-            <div class="all-projects">
-                <div class="html-projects" id="htm-projects">
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/1.png" alt=""></div>
-                        <div class="project-name">live class project 1</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-01/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-01" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/2.png" alt=""></div>
-                        <div class="project-name">live class project 2</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-02/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-02" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/3.png" alt=""></div>
-                        <div class="project-name">live class project 3</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-03/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-03" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/4.png" alt=""></div>
-                        <div class="project-name">live class project 4</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-04/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-04" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/5.png" alt=""></div>
-                        <div class="project-name">live class project 5</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-05/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-05" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/6.png" alt=""></div>
-                        <div class="project-name">live class project 6</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-06/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-06" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/7.png" alt=""></div>
-                        <div class="project-name">live class project 7</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-07/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-07" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/8.png" alt=""></div>
-                        <div class="project-name">live class project 8</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-08/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-08" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/9.jpg" alt=""></div>
-                        <div class="project-name">live class project 9</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-09/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-09" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/10.png" alt=""></div>
-                        <div class="project-name">live class project 10</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-10/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-10" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/11.jpg" alt=""></div>
-                        <div class="project-name">live class project 11</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-11/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-11" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/12.jpg" alt=""></div>
-                        <div class="project-name">live class project 12</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-12/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-12" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/13.jpg" alt=""></div>
-                        <div class="project-name">live class project 13</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-13/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-13" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/14.png" alt=""></div>
-                        <div class="project-name">live class project 14</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-14/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-14" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                    <div class="project">
-                        <div class="caption"><img src="/images/html-projects/15.jpg" alt=""></div>
-                        <div class="project-name">live class project 15</div>
-                        <div class="project-btns"><a href="https://blacktiles.github.io/LIVE-CLASS-PROJECT-15/" target="_blank" class="source-btn">VIEW</a><a href="https://github.com/blackTiles/LIVE-CLASS-PROJECT-15" target="_blank" class="link-btn">SOURCE CODE</a></div>
-                    </div>
-                </div>
-                
-            </div>
+            
         </section>
         <section class="contact-page">
             <div class="contact-page-inner" id="page-contact">
@@ -192,6 +117,15 @@
             </div>        
         </footer>
     </div>
+    <script>
+        function openNav() {
+          document.querySelector(".list-items").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.querySelector(".list-items").style.width = "0";
+        }
+    </script>
 </body>
 </html>
 
